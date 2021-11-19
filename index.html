@@ -19,25 +19,26 @@
 				<img src="assets/img/cryptocurrency.png" alt="Cryptocurrencies">
 			</figure>
 			<section class="quote-crypt">
-				<form action="">
+				<form id="search-crypto">
 					<p class="quote-crypt__text-input">CHOOSE YOUR CURRENCY</p>
 					<select class="quote-crypt__select" name="currency">
-						<option value="">USD Dollar</option>
+						<option value="" disabled selected>Your currency</option>
+						<option value="USD">American dollar</option>
+						<option value="COP">Colombian currency</option>
+						<option value="GBP">Pounds currency</option>
+						<option value="EUR">Euros</option>
 					</select>
 					<p class="quote-crypt__text-input --pdt">CHOOSE YOUR CRYPTOCURRENCY</p>
-					<select class="quote-crypt__select" name="cryptocurrency">
-						<option value="">Bitcoin</option>
+					<select class="quote-crypt__select" name="cryptocurrency" id="cryptocurrencys">
+						<option value="" disabled selected>Your cryptocurrency</option>
 					</select>
 					<button class="quote-crypt__btn">
-						Quote <i class="bi bi-calculator-fill"></i>
+						Quote <i class="bi bi-currency-exchange"></i>
 					</button>
 				</form>
-				<p class="quote-crypt__text --title">The price is: <span class="quote-crypt__text-bold">$ 546</span></p>
-				<p class="quote-crypt__text">Highest price of the day: <span class="quote-crypt__text-bold">$ 56.564</span></p>
-				<p class="quote-crypt__text">Lowest price of the day: <span class="quote-crypt__text-bold">$ 456</span></p>
-				<p class="quote-crypt__text">Variation last 24 hours: <span class="quote-crypt__text-bold">-1.5%</span></p>
-				<p class="quote-crypt__text">Last update: <span class="quote-crypt__text-bold">Just now</span></p>
-			</section>
+				<div id="quote-crypt__data">
+				</div>
+				</section>
 		</div>
 	</main>
 	<script src="js/app.js"></script>
