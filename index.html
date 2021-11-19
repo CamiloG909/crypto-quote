@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#1CCC5B" />
+	<link rel="stylesheet" href="styles/css/styles.css">
+	<link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
+	<title>Cryptocurrencies quote</title>
+</head>
+<body>
+	<header class="header">
+		<img class="header__img" src="assets/img/logo-250.png" alt="Logo header">
+	</header>
+	<main>
+		<div class="container">
+			<figure class="container__img">
+				<img src="assets/img/cryptocurrency.png" alt="Cryptocurrencies">
+			</figure>
+			<section class="quote-crypt">
+				<form action="">
+					<p class="quote-crypt__text-input">CHOOSE YOUR CURRENCY</p>
+					<select class="quote-crypt__select" name="currency">
+						<option value="">USD Dollar</option>
+					</select>
+					<p class="quote-crypt__text-input --pdt">CHOOSE YOUR CRYPTOCURRENCY</p>
+					<select class="quote-crypt__select" name="cryptocurrency">
+						<option value="">Bitcoin</option>
+					</select>
+					<button class="quote-crypt__btn">
+						Quote <i class="bi bi-calculator-fill"></i>
+					</button>
+				</form>
+				<p class="quote-crypt__text --title">The price is: <span class="quote-crypt__text-bold">$ 546</span></p>
+				<p class="quote-crypt__text">Highest price of the day: <span class="quote-crypt__text-bold">$ 56.564</span></p>
+				<p class="quote-crypt__text">Lowest price of the day: <span class="quote-crypt__text-bold">$ 456</span></p>
+				<p class="quote-crypt__text">Variation last 24 hours: <span class="quote-crypt__text-bold">-1.5%</span></p>
+				<p class="quote-crypt__text">Last update: <span class="quote-crypt__text-bold">Just now</span></p>
+			</section>
+		</div>
+	</main>
+	<script src="js/app.js"></script>
+</body>
+</html>
